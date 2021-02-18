@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    padding: 20px 0px;
+}
+
+header h1{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.subheader{
+    display: flex;
+    align-items: baseline;
+}
+
+.subheader p {
+    margin-left: 20px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    width: 50%;
+}
+
+main{
+    margin-bottom: 50px;
+}
+
+.recipe {
+    width: 100%;
+}
+
+.recipe h2{
+    font-family: 'Playfair Display';
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.recipe h3{
+    font-family: 'Playfair Display';
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.checkbox-group, .instruction-item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.checkbox-group{
+    width: 80%;
+}
+
+.checkbox-item, .instruction-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.checkbox-group label, .instruction-text {
+    margin-left: 10px;
+    display: block;
+}
+
+.checkbox-group span {
+    font-weight: 700;
+}
+
+.instruction-number {
+    background-color: #F2994A;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.instruction-text{
+    width: 80%;
+}
+
+.recipe-figure img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    column-gap: 40px;
+    padding-top: 30px;
+}
+
+.summary {
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 10px 20px;
+    height: fit-content;
+}
+
+.summary-item {
+    display: flex;
+    margin: 20px 0;
+}
+
+.summary-item img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.orange-icon{
+    filter: invert(76%) sepia(59%) saturate(1679%) hue-rotate(325deg) brightness(99%) contrast(92%);
+}
+
+.summary-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.summary-head{
+    color: #BDBDBD;
+}
+
+.summary-orange-text{
+    color: #F2994A;
+}
+
+.source{
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    color: #BDBDBD;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #828282;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media (max-width: 1366px){
+    .grid{
+        grid-template-columns: 4fr 1fr;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    header h1{
+        font-size: 24px;
+    }
+    .subheader p{
+        width: 100%;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .recipe-figure img{
+        height: unset;
+        margin-bottom: 0;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        padding-top: 0;
+    }
+    .summary{
+        grid-row: 1;
+        box-shadow: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+    }
+    .summary-text{
+        font-size: 8px;
+    }
+    .summary-item img{
+        width: 30px;
+    }
+    .summary-item:nth-child(1) {
+        grid-column: 1 / span 3;
+    }
+    .summary-item{
+        margin: 15px 0;
+    }
+    .recipe{
+        margin-top: 20px;
+    }
+    .checkbox-group{
+        width: 100%;
+    }
+    .recipe h2{
+        font-size: 18px;
+    }
+    .recipe h3{
+        font-size: 16px;
+    }
+}
