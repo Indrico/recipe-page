@@ -28,14 +28,14 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
-- [Features](#features)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+<div align="center"><img src="https://indrico-recipe-page.netlify.app/Screenshoot/desktop-screenshoot.png"/></div>
+<div align="center"><img src="https://indrico-recipe-page.netlify.app/Screenshoot/mobile-screenshoot.png"/></div>
 
 ### Built With
 - HTML
@@ -43,6 +43,6 @@
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [indrico.xyz](https://indrico.xyz)
+- GitHub [@indrico](https://github.com/indrico)
+- Twitter [@indrico123](https://twitter.com/indrico123)
